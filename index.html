@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/306b7ee2a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Network System Technician</p>
+            <h1>Hi, I'm <span>Minh Cuong</span><br>Nguyen from Viet Nam</h1>
+        </div>
+    </div>
+</div>
+<!-----------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm thrilled to welcome you to my online space. Nestled in the vibrant city of Toronto, Ontario.
+                    I am a dedicated IT Computer System Technician with a passion for all things tech.
+                    My aim? To secure the role of Intermediate Network Administrator, leveraging my extensive experience
+                    in Cisco network administration, proficiency in cloud networking, and scripting skills in PowerShell
+                    and Python. Below, you'll discover more about my qualifications, skills, and the journey that
+                    has brought me to this point in my career. Let's explore the world of IT together!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Network Administration</span><br>Cisco Systems for Business, Network Automation
+                                and SD-WAN(Software-Defined Wide Area Networking)</li>
+                            <li><span>Web Development</span><br>Commercial Web Services, Cloud services(AWS/Azure)</li>
+                            <li><span>Data Management</span><br>PowerShell, Python and Remedy Incident Management System</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-2021</span><br>Web Designers for Atlas Co., Ltd</li>
+                            <li><span>2021-2022</span><br>Commercial Web Services, Data Analyse and Network Operating System</li>
+                            <li><span>2022-2023</span><br>PowerShell, Python and Network Automation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2020</span><br>Completed Udemy course for Designing and Maintaining Commercial Webpages</li>
+                            <li><span>2020-2022</span><br>Student of George Brown College with Network System Technician Program</li>
+                            <li><span>2023-2024</span><br>Graduated George Brown Colleges and Started Post-graduate Program with Cyber Security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------services------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-circle-nodes"></i>
+                <h2>Network Administator</h2>
+                <p>Our specialized Network Administrator, proficient in Cisco technology, focuses on designing and
+                    planning network architectures to ensure optimal performance and security. We diligently monitor
+                    network health, troubleshoot issues, and maintain up-to-date software to guarantee smooth operation.
+                    Meticulous documentation is a priority for us, providing clarity in network management.
+                    We optimize network configurations, offer strong user support, and develop thorough disaster
+                    recovery plans to safeguard data and ensure uninterrupted network operation. Additionally,
+                    we stay current with Cisco technologies and can provide training to enhance your team's network
+                    management skills.</p>
+                <a href="https://docs.google.com/document/d/1RELTtT8iGU7Xc7zu5eb5Eqrhu9ymGnsT/edit?usp=drive_link&ouid=115251434508517277626&rtpof=true&sd=true">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hospital-user"></i>
+                <h2>Network Automation</h2>
+                <p>We specialize in network automation, optimizing both physical and virtual network devices, with our
+                    Network Administrator's expertise in Cisco technology ensuring efficiency and precision. Beyond
+                    automation, we excel in configuration optimization, robust user support, and comprehensive disaster
+                    recovery planning. Our commitment to staying updated on Cisco technologies allows us keeping your
+                    network at the forefront of the rapidly evolving IT landscape.</p>
+                <a href="https://docs.google.com/document/d/155YdEI2udMw3YQuViYxbZC9urKnZ7--0/edit?usp=drive_link&ouid=115251434508517277626&rtpof=true&sd=true">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>AWS Ads & Amazon Web Services</h2>
+                <p> Experience cutting-edge solutions and unparalleled marketing capabilities with AWS Advertising &
+                    Marketing. Elevate your digital presence, target audiences with precision, and drive results that
+                    matter. Harness the strength of AWS to optimize your advertising campaigns, scale your marketing
+                    efforts, and stay ahead in the competitive landscape. Explore the possibilities with AWS Advertising
+                    & Marketing today.</p>
+                <a href="https://docs.google.com/document/d/1_P6LOFe8ECLEctmN9mrstwjXu7yDR9k5/edit?usp=drive_link&ouid=115251434508517277626&rtpof=true&sd=true">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Business Connection</h3>
+                    <p>I specialize in fostering robust business connections through AWS Advertising & Marketing
+                        solutions. Utilizing Amazon Web Services, I craft targeted advertising campaigns and marketing
+                        strategies that strengthen relationships between businesses and their audiences.
+                        My focus is on delivering measurable results that drive growth and success. With a keen
+                        understanding of AWS capabilities and a commitment to staying ahead in the digital marketing
+                        realm, I'm dedicated to helping businesses thrive in today's dynamic landscape.</p>
+                    <a href="#"><i class="fa-solid fa-network-wired"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Network Qualification</h3>
+                    <p>In my role, I excel in swiftly resolving network issues, drawing upon my problem-solving skills,
+                        and providing advanced Cisco training with a strong emphasis on clear communication. My
+                        attention to detail and adaptability ensure seamless network operations, and my dedication to
+                        staying updated empowers teams with the latest skills to keep your network ahead of the curve.</p>
+                    <a href="#"><i class="fa-solid fa-network-wired"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Security Network Plan</h3>
+                    <p>In the realm of network troubleshooting, I swiftly and skillfully identify resolving complex
+                        network issues with precision and accuracy. My commitment to detail guarantees uninterrupted
+                        network functionality, minimizing downtime and maximizing productivity. Backed by a solid
+                        foundation in Cisco technology and network automation, I employ a comprehensive and
+                        results-oriented approach to troubleshooting. This empowers your organization, providing robust
+                        security options and ensuring resilience against network crashes and potential malware threats,
+                        thereby safeguarding your network's integrity.</p>
+                    <a href="#"><i class="fa-solid fa-network-wired"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> Minhcuong.Nguyen@georgebrown.ca</p>
+                <p><i class="fa-solid fa-square-phone"></i> +1 (437) 215 3563</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cuong.nguyen.71066700/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/cuong.as/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/cuong-nguyen-minh-16bbb8250/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV </a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright@ Marco. Made with <i class="fa-solid fa-heart"></i> Easy Tutorial</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function  openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function  closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzSwWLPigDRIsq27Cb7Sgv1WQnnm7Z0h5wkQ3Dy20-5Nwf2_KrZQrAtsJZYfyMnI6qYxw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
